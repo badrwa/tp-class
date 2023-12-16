@@ -10,11 +10,13 @@ move_uploaded_file($tmp,$to);
 
 $result=mysqli_query($cnx,"insert into etudiant(nom,prenom,photo,class,tel,email) values ('$nom','$prenom','$to','$class','$tel','$email')");
 
- print_r($result);
+//  print_r($result);
 
 if (!$cnx) {
     echo "my sql ne pas connecion".mysqli_connect_errno();
     
     
 }
+header("location:list.php");
 ?>
+
