@@ -31,14 +31,12 @@ if($cnx){
             <td><?=$p['id']?></td>
             <td><?=$p['nom']?></td>
             <td><?=$p['prenom']?></td>
-            <td><?=$p['photo']?></td>
+            <td><img src="<?=$p['photo']?>" width="200" height="150" alt=""></td>
             <td><?=$p['class']?></td>
             <td><?=$p['tel']?></td>
             <td><?=$p['email']?></td>
             <td>
-                <?php if ($p['note']>=10) {echo "Admin";}else{ echo "Pas admin"; } ?>
-                <a href="del.php?id=<?=$p['id']?>">del</a>
-                
+                <a href="del.php?id=<?=$p['id']?>">del</a>   
             </td>
         </tr>
 <?php } ?>

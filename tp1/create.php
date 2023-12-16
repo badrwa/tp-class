@@ -22,7 +22,7 @@
         <button type="submit">Ajouter</button>
         <button id="navigateBtn">Go to</button>
         
-    </form>
+    </form>  
     <script>
     document.getElementById("navigateBtn").addEventListener("click", function() {
       window.location.href = "list.php"; 
